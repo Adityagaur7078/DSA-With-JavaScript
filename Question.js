@@ -28,56 +28,56 @@ console.log(i);
 
 
 // Question
-let a = 11, b = 22;
+let x = 11, y = 22;
 
-let c = a + b + a++ + b++ + ++a + ++b;
+let z = x + y + x++ + y++ + ++x + ++y;
 
-// console.log("a=" + a);
-// console.log("b=" + b);
-// console.log("c=" + c);
+// console.log("x=" + x);
+// console.log("y=" + y);
+// console.log("z=" + z);
 
 // Answer
 
 // Initial values:
-a = 11
-b = 22
+x = 11
+y = 22
 
 // Expression:
-c = a + b + a++ + b++ + ++a + ++b
+z = x + y + x++ + y++ + ++x + ++y
 
 
-// Step 1: a
+// Step 1: x
 // Uses current value → 11
 
-// Step 2: b
+// Step 2: y
 // Uses current value → 22
 
-// Step 3: a++ (post-increment)
-// Uses 11, then a becomes 12
+// Step 3: x++ (post-increment)
+// Uses 11, then x becomes 12
 
-// Step 4: b++ (post-increment)
-// Uses 22, then b becomes 23
+// Step 4: y++ (post-increment)
+// Uses 22, then y becomes 23
 
-// Step 5: ++a (pre-increment)
-// First increases a from 12 to 13, then uses 13
+// Step 5: ++x (pre-increment)
+// First increases x from 12 to 13, then uses 13
 
-// Step 6: ++b (pre-increment)
-// First increases b from 23 to 24, then uses 24
+// Step 6: ++y (pre-increment)
+// First increases y from 23 to 24, then uses 24
 
 
 // Now substitute values:
-c = 11 + 22 + 11 + 22 + 13 + 24
+//z = 11 + 22 + 11 + 22 + 13 + 24
 
-c = 103
+//z = 103
 
 
 // Final values:
-a = 13
-b = 24
+// x = 13
+// y = 24
 
-console.log("a=" + a); // a=13
-console.log("b=" + b); // b=24
-console.log("c=" + c); // c=103
+console.log("x=" + x); // x=13
+console.log("y=" + y); // y=24
+console.log("z=" + z); // z=103
 
 
 
@@ -147,3 +147,62 @@ let m = 11;
 
 // Causes an error:
 // SyntaxError: Invalid left-hand side expression in prefix operation
+
+
+
+
+
+
+
+// Question
+// Calculate area and perimeter of rectangle
+
+// Answer
+let length = 23;
+let breadth = 9;
+
+// Area of rectangle
+console.log(length * breadth);
+
+// Perimeter of rectangle
+console.log(2 * (length + breadth));
+
+
+
+
+// Quetion
+// Generate OTP
+
+// Answer
+console.log(Math.trunc(Math.random()*9000)+1000);
+
+
+
+
+
+
+// Question
+// Area of triangle by heron's formula
+
+// Answer
+let a = 20;
+let b = 21;
+let c = 29;
+
+let s = (a + b + c) / 2;
+
+// heron's formula
+console.log(Math.sqrt(s * (s - a) * (s - b) * (s - c)));
+
+
+
+
+
+
+// Question
+// Circumference of Circle
+
+// Answer
+let radius = 4;
+
+console.log(2 * Math.PI * radius);
