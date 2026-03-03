@@ -153,4 +153,68 @@ function runOperators() {
     // Pre → change first, then use
     // Post → use first, then change
 
+
+
+
+
+
+
+
+
+    // *** ternary operators [condition ? true_value : false_value;] ***
+
+    // in this first we give condition then ? after this true condition is written : after this false condition
+
+    112 > 13 ? console.log("you") : console.log("me");
+    // 112 > 13 → true
+    // so the part before : runs
+    // console.log("you") executes
+    // Output: you
+
+
+    11 > 13 ? console.log("you") : console.log("me");
+    // 11 > 13 → false
+    // so the part after : runs
+    // console.log("me") executes
+    // Output: me
+
+
+    console.log(122 > 13 ? "you" : "me");
+    // Simple way to write ternary operator
+
+
+
+
+
+
+
+
+
+
+    // *** Nested ternary operator condition1 ? true_block1 : condition2 ? true_block2 : false_block;
+
+    // *** Nested ternary operator ***
+
+    let marks = 75;
+
+    marks >= 90
+        ? console.log("Grade A")
+        : marks >= 60
+            ? console.log("Grade B")
+            : console.log("Grade C");
+
+
+    // Step 1:
+    // marks >= 90 → false
+
+    // Step 2:
+    // since first condition is false,
+    // it checks next condition
+
+    // marks >= 60 → true
+
+    // So console.log("Grade B") runs
+
+    // Output: Grade B
+
 }
