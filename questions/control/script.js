@@ -1,4 +1,4 @@
-const topic = "electricity";
+const topic = "SumNaturalNum";
 
 if (topic === "increment") runIncrementExamples();
 if (topic === "boolean") runBooleanIncrement();
@@ -10,3 +10,4 @@ if (topic === "circle") runCircle();
 if (topic === "electricity") runElectricityBill();
 if (topic === "currency") runInrCurrencyBreakdown();
 if (topic === "voter") runValidVoter();
+if (topic === "SumNaturalNum") runsumOfNaturalNumbers();
