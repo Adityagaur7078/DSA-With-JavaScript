@@ -1,4 +1,4 @@
-const topic = "factorial";
+const topic = "factors";
 
 if (topic === "increment") runIncrementExamples();
 if (topic === "boolean") runBooleanIncrement();
@@ -12,3 +12,4 @@ if (topic === "currency") runInrCurrencyBreakdown();
 if (topic === "voter") runValidVoter();
 if (topic === "SumNaturalNum") runsumOfNaturalNumbers();
 if (topic === "factorial") runFactorial();
+if (topic === "factors") runFactorsOfNumbers();
